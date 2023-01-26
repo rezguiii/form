@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEST FLIGHTS SERVICES</title>
+</head>
+<body>
+    <h1>Réservation</h1>
+<form action="reserver.php"  name="formulaire">
+	<fieldset>
+<legend>contact</legend>
+<label for="id-nom">contact :</label>
+<input class="trunks" type="text" id="id-nom" name="nom"><br>
+<label for="Téléphone">Téléphone :</label>
+<input class="trunks" type="tel" name="numTel" id="Téléphone" pattern="[0-9]{2} [0-9]{6}" placeholder="98 852035"><br>
+<label for="id-pnom">Prénom :</label>
+<input class="trunks" type="text" id="id-pnom" name="Prénom"><br>
+</fieldset>
+<fieldset>
+	<legend>Type du billet</legend>
+	<input type="radio" value="A" name="flight" id="id-A1">
+	<label for="id-A1">Allez simple</label><br>
+	<input type="radio" value="A" name="flight" id="id-A2" checked>
+	<label for="id-A2">Allez retour</label><br>
+	<a href="Multi.html">Multi destinations</a>
+</fieldset>
+<fieldset>
+	<legend>Destination</legend>
+	<label for="">DE:</label>
+	<select name="ville" id="L1">
+		<option value="Am">Amesterdam</option>
+		<option value="Ab">Abidijan</option>
+        <option value="Al">Alger</option>
+        <option value="Ba">Bamako</option>
+        <option value="Pa">Paris</option>
+	</select><br>
+	<label for="">VERS:</label>
+	<select name="ville" id="L1">
+		<option value="Ab">Abidijan</option>
+		<option value="Am">Amesterdam</option>
+        <option value="Al">Alger</option>
+        <option value="Ba">Bamako</option>
+        <option value="Pa">Paris</option>
+	</select>
+</fieldset>
+<fieldset>
+	<legend>Dates</legend>
+	<label for="">Date de depart :</label>
+	<input class="trunks" type="date" name="Date de depart :"><br>
+	<label for="">Date de retour :</label>
+	<input class="trunks" type="date" name="Date de retour :">
+</fieldset>
+<fieldset>
+	<legend>Voyageurs</legend>
+	<label for="">Adults(25+)</label>
+	<input class="trunks" type="number" value="1">
+    <label for="">Jeunes(12-24)</label>
+    <input class="trunks" type="numbre" value="0"><br>
+    <label for="">Enfants(2-11)</label>
+    <input class="trunks" type="numbre" value="0">
+     <label for="">BéBés<2</label>
+    <input class="trunks" type="numbre" value="0">
+</fieldset>
+<fieldset>
+	<legend>Type du payment</legend>
+	<input type="radio" name="paiement" id="id-P1" value="P" checked>
+	<label for="id-P1">Paiement carte de credit</label><br>
+	<input type="radio" name="paiement" id="id-P2" value="P">
+	<label for="id-P2">Paiement e-Dinar poste</label>
+</fieldset>
+<fieldset>
+	<div>
+	<button type="submit"><img src="ok.png"></button>
+	<button type="reset"><img src="cancel.png"></button>
+	</div>
+</fieldset>
+</form>
+</body>
+</html>
